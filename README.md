@@ -1,1 +1,1 @@
-# Work in Progress
+Configuration files and some python files (we directly place them in the mmseg package) are being put together. We release the codes of our model first. We borrow some codes from [vit-pytorch](https://github.com/lucidrains/vit-pytorch)
