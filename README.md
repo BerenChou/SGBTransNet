@@ -1,1 +1,1 @@
-Configuration files and some python files (we directly place them in the mmseg package) are being put together. We release the codes of our model first. We borrow some codes from [vit-pytorch](https://github.com/lucidrains/vit-pytorch)
+Configuration files and some python files (we directly place them in the mmseg package) are being put together. We release the codes of our model first. The project is built upon [mmsegmentation]() and we also borrow some codes from [vit-pytorch](https://github.com/lucidrains/vit-pytorch), deep thanks for their codes.
