@@ -46,21 +46,21 @@ The PanNuke dataset can be downloaded in [https://warwick.ac.uk/fac/cross_fac/ti
     │       ├── training
     │       └── validation
     ├── PanNukeDataset
-    │   ├── Folds123
-    │   │   ├── images
-    │   │   │   ├── training
-    │   │   │   └── validation
-    │   │   ├── annotations
-    │   │       ├── training
-    │   │       └── validation
-    │   ├── Folds123
-    │   │   ├── images
-    │   │   │   ├── training
-    │   │   │   └── validation
-    │   │   ├── annotations
-    │   │       ├── training
-    │   │       └── validation
-    │   ├── Folds123
+        ├── Folds123
+        │   ├── images
+        │   │   ├── training
+        │   │   └── validation
+        │   ├── annotations
+        │       ├── training
+        │       └── validation
+        ├── Folds132
+        │   ├── images
+        │   │   ├── training
+        │   │   └── validation
+        │   ├── annotations
+        │       ├── training
+        │       └── validation
+        ├── Folds231
             ├── images
             │   ├── training
             │   └── validation
