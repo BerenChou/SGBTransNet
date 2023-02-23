@@ -1,5 +1,4 @@
 import torch.nn as nn
-import torch.utils.data
 import torch
 from mmseg.models.builder import BACKBONES
 from mmcv.cnn.bricks.conv_module import ConvModule
@@ -101,21 +100,21 @@ class SGBTransNet(nn.Module):
         self.Conv5 = conv_block(channels_list[3], channels_list[4])  # (512, 1024)
 
         self.Up5 = up_conv(channels_list[4], channels_list[3])  # (1024, 512)
-        self.scem4 = SCEM(dpcca_ratio, backbone_dim=channels_list[3], seq_dim=channels_list[3],
+        self.scem4 = SCEM(dpcca_ratio, backbone_dim=channels_list[3], seq_dim=channels_list[2],
                           feature_map_size=feature_maps_size_list[4], patch_size=1, ffn_dim=channels_list[2],
-                          head_dim=channels_list[2] // 4, head_num=4, dropout=0.1, depth=3)
+                          head_dim=channels_list[2] // 4, head_num=4, dropout=0., depth=3)
         self.Up_conv5 = conv_block(channels_list[4], channels_list[3])  # (1024, 512)
 
         self.Up4 = up_conv(channels_list[3], channels_list[2])  # (512, 256)
-        self.scem3 = SCEM(dpcca_ratio, backbone_dim=channels_list[2], seq_dim=channels_list[2],
+        self.scem3 = SCEM(dpcca_ratio, backbone_dim=channels_list[2], seq_dim=channels_list[1],
                           feature_map_size=feature_maps_size_list[3], patch_size=2, ffn_dim=channels_list[1],
-                          head_dim=channels_list[1] // 4, head_num=4, dropout=0.1, depth=3)
+                          head_dim=channels_list[1] // 4, head_num=4, dropout=0., depth=3)
         self.Up_conv4 = conv_block(channels_list[3], channels_list[2])  # (512, 256)
 
         self.Up3 = up_conv(channels_list[2], channels_list[1])  # (256, 128)
-        self.scem2 = SCEM(dpcca_ratio, backbone_dim=channels_list[1], seq_dim=channels_list[1],
-                          feature_map_size=feature_maps_size_list[2], patch_size=4, ffn_dim=channels_list[1],
-                          head_dim=channels_list[1] // 4, head_num=4, dropout=0.1, depth=3)
+        self.scem2 = SCEM(dpcca_ratio, backbone_dim=channels_list[1], seq_dim=channels_list[0],
+                          feature_map_size=feature_maps_size_list[2], patch_size=4, ffn_dim=channels_list[0],
+                          head_dim=channels_list[0] // 4, head_num=4, dropout=0., depth=3)
         self.Up_conv3 = conv_block(channels_list[2], channels_list[1])  # (256, 128)
 
         self.Up2 = up_conv(channels_list[1], channels_list[0])  # (128, 64)

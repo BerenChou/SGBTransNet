@@ -5,7 +5,7 @@ import torch
 class DPCCA(nn.Module):
     """ channels: The number of channels of S and D.
         ratio: The ratio in channel-attention mechanism. """
-    def __init__(self, channels, ratio):
+    def __init__(self, channels, ratio=2):
         super(DPCCA, self).__init__()
         self.gap = nn.AdaptiveAvgPool2d(1)
 

@@ -102,10 +102,15 @@ class CrossAttention(nn.Module):
 
 
 class CATransformer(nn.Module):
-    """ seq_dim: the number of channels of the feature maps input to
+    """CATransformer in SFRTrans.
+
+    Args:
+        seq_dim: the number of channels of the feature maps input to
             CATransformer, i.e., the dimension of seq_E and seq_D.
         ffn_dim: the intermediate dimension of the FFN.
-        dropout: the dropout prob for CA and FFN. """
+        dropout: the dropout prob for CA and FFN.
+    """
+
     def __init__(self, seq_dim, ffn_dim, head_dim, head_num, dropout):
         super().__init__()
 
