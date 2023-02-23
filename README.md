@@ -7,19 +7,21 @@ Trained weights of SGBTransNet for the Synapse dataset: [Google Drive](https://d
 # Experiments
 ## Data acquisition
 The Synapse dataset can be downloaded in [https://github.com/Beckschen/TransUNet](https://github.com/Beckschen/TransUNet).
+
 The CPS dataset can be downloaded in [https://github.com/DengPingFan/PraNet](https://github.com/DengPingFan/PraNet).
+
 The PanNuke dataset can be downloaded in [https://warwick.ac.uk/fac/cross_fac/tia/data/pannuke](https://warwick.ac.uk/fac/cross_fac/tia/data/pannuke).
 ## File format
 ```
 ├── data
-    ├── SDataset
+    ├── SynapseDataset
     │   ├── images
     │   │   ├── training
     │   │   └── validation
     │   ├── annotations
     │       ├── training
     │       └── validation
-    └── CPSDataset
+    ├── CPSDataset
     │   ├── images
     │   │   ├── training
     │   │   └── validation
@@ -36,9 +38,9 @@ The PanNuke dataset can be downloaded in [https://warwick.ac.uk/fac/cross_fac/ti
     │          └── CVC-ColonDB
     │          └── ETIS-LaribPolypDB
     │          └── Kvasir
-    └── CLTSDataset
+    ├── CLTSDataset
     │
-    └── PNDataset
+    ├── PanNukeDataset
 
 ```
 ## Synapse
