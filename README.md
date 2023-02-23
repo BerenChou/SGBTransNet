@@ -2,8 +2,6 @@ WIP.
 
 Configuration files and some python files (including dataset class files, loading pipelines, metric files, loss functions, etc.) which we directly place them in the mmseg package are being put together. We release the codes of our model first. The project is built upon [mmsegmentation](https://github.com/open-mmlab/mmsegmentation) and we also borrow some codes from [vit-pytorch](https://github.com/lucidrains/vit-pytorch), deep thanks for their codes.
 
-Trained weights of SGBTransNet for the Synapse dataset: [Google Drive](https://drive.google.com/file/d/1VR-3Nyz1yq2foorOZY-dxmCvhcyz-R9S/view?usp=sharing). More weights and testing screenshots are coming in no time.
-
 # Experiments
 ## Data acquisition
 The Synapse dataset can be downloaded in [https://github.com/Beckschen/TransUNet](https://github.com/Beckschen/TransUNet).
@@ -68,3 +66,13 @@ The PanNuke dataset can be downloaded in [https://warwick.ac.uk/fac/cross_fac/ti
                 ├── training
                 └── validation
 ```
+## Results
+![image](https://github.com/BerenChou/SGBTransNet/blob/main/results/Synapae_Results.jpg)
+![image](https://github.com/BerenChou/SGBTransNet/blob/main/results/CVC-ClinicDB_Results.jpg)
+![image](https://github.com/BerenChou/SGBTransNet/blob/main/results/Kvasir_Results.jpg)
+![image](https://github.com/BerenChou/SGBTransNet/blob/main/results/CVC-ColonDB_Results.jpg)
+![image](https://github.com/BerenChou/SGBTransNet/blob/main/results/ETIS_Results.jpg)
+## Trained model
+Trained weights of SGBTransNet for the Synapse dataset: [Google Drive](https://drive.google.com/file/d/1VR-3Nyz1yq2foorOZY-dxmCvhcyz-R9S/view?usp=sharing).
+
+Trained weights of SGBTransNet for the CPS dataset: [Google Drive](https://drive.google.com/file/d/1jdrLCooxc03hhsAD5t9JBkhYTZFDE9fm/view?usp=sharing).
