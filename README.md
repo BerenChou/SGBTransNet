@@ -30,7 +30,7 @@ The PanNuke dataset can be downloaded in [https://warwick.ac.uk/fac/cross_fac/ti
     │   │      └── CVC-ColonDB
     │   │      └── ETIS-LaribPolypDB
     │   │      └── Kvasir
-    │   ├── Train_Folder
+    │   ├── annotations
     │       ├── training
     │       └── validation
     │       └── validation_respectively
@@ -39,8 +39,32 @@ The PanNuke dataset can be downloaded in [https://warwick.ac.uk/fac/cross_fac/ti
     │          └── ETIS-LaribPolypDB
     │          └── Kvasir
     ├── CLTSDataset
-    │
+    │   ├── images
+    │   │   ├── training
+    │   │   └── validation
+    │   ├── annotations
+    │       ├── training
+    │       └── validation
     ├── PanNukeDataset
-
+    │   ├── Folds123
+    │   │   ├── images
+    │   │   │   ├── training
+    │   │   │   └── validation
+    │   │   ├── annotations
+    │   │       ├── training
+    │   │       └── validation
+    │   ├── Folds123
+    │   │   ├── images
+    │   │   │   ├── training
+    │   │   │   └── validation
+    │   │   ├── annotations
+    │   │       ├── training
+    │   │       └── validation
+    │   ├── Folds123
+            ├── images
+            │   ├── training
+            │   └── validation
+            ├── annotations
+                ├── training
+                └── validation
 ```
-## Synapse
