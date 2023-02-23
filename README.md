@@ -67,7 +67,9 @@ The PanNuke dataset can be downloaded in [https://warwick.ac.uk/fac/cross_fac/ti
                 └── validation
 ```
 ## Results
+### SynapseDataset
 ![image](https://github.com/BerenChou/SGBTransNet/blob/main/results/Synapae_Results.jpg)
+### CPSDataset
 ![image](https://github.com/BerenChou/SGBTransNet/blob/main/results/CVC-ClinicDB_Results.jpg)
 ![image](https://github.com/BerenChou/SGBTransNet/blob/main/results/Kvasir_Results.jpg)
 ![image](https://github.com/BerenChou/SGBTransNet/blob/main/results/CVC-ColonDB_Results.jpg)
