@@ -2,7 +2,7 @@
 
 Codes and configurations for our model, trained weights (see below) have been uploaded.
 
-Some codes (calculating 95HD, loss functions with SVLS, loading pipelines, etc.) are written in source codes of mmsegmentation package, and are being put together now. The project is built upon [mmsegmentation](https://github.com/open-mmlab/mmsegmentation) and we also borrow some codes from [vit-pytorch](https://github.com/lucidrains/vit-pytorch), deep thanks for their codes.
+Some codes (calculating 95HD, loss functions with SVLS, loading pipelines, etc.) which we directly code them in source codes of mmsegmentation package are being put together now, and will be released soon. The project is built upon [mmsegmentation](https://github.com/open-mmlab/mmsegmentation) and we also borrow some codes from [vit-pytorch](https://github.com/lucidrains/vit-pytorch), deep thanks for their codes.
 
 # Experiments
 ## Data acquisition
