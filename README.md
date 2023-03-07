@@ -1,8 +1,8 @@
 # Work in progress...
 
-Model codes and trained weights (see below) have been uploaded.
+Codes and configurations for our model, trained weights (see below) have been uploaded.
 
-Configuration files and some python files (including dataset class files, loading pipelines, metric files, loss functions, etc.) which we directly place them in the mmseg package are being put together. We release the codes of our model first. The project is built upon [mmsegmentation](https://github.com/open-mmlab/mmsegmentation) and we also borrow some codes from [vit-pytorch](https://github.com/lucidrains/vit-pytorch), deep thanks for their codes.
+Some codes (calculating 95HD, loss functions with SVLS, loading pipelines, etc.) are written in source codes of mmsegmentation package, and are being put together now. The project is built upon [mmsegmentation](https://github.com/open-mmlab/mmsegmentation) and we also borrow some codes from [vit-pytorch](https://github.com/lucidrains/vit-pytorch), deep thanks for their codes.
 
 # Experiments
 ## Data acquisition
